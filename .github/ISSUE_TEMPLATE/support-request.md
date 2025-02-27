@@ -14,7 +14,7 @@ Concisely describe what's going wrong.
 
 <!-- Paste any logs here (between the backticks). -->
 <!-- You can get extended logs by setting the environment variable DEBUG to *. -->
-<!-- For example, DEBUG=* yarn start if you're running directly from the cloned repository. -->
+<!-- For example, DEBUG=* npm run start if you're running directly from the cloned repository. -->
 ```
 
 ```
