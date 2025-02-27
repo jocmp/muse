@@ -80,8 +80,8 @@ services:
 1. `git clone https://github.com/jocmp/muse.git && cd muse`
 2. Copy `.env.example` to `.env` and populate with values
 3. I recommend checking out a tagged release with `git checkout v[latest release]`
-4. `yarn install` (or `npm i`)
-5. `yarn start` (or `npm run start`)
+4. `npm i`
+5. `npm run start`
 
 **Note**: if you're on Windows, you may need to manually set the ffmpeg path. See [#345](https://github.com/jocmp/muse/issues/345) for details.
 
