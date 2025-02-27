@@ -1,14 +1,6 @@
-<p align="center">
-  <img width="250" height="250" src="https://raw.githubusercontent.com/codetheweb/muse/master/.github/logo.png">
-</p>
-
-**🔎 I'm currently looking for maintainers.** Check out [this issue](https://github.com/codetheweb/muse/issues/1063) for details.
-
-------
+# Muse 🌿
 
 Muse is a **highly-opinionated midwestern self-hosted** Discord music bot **that doesn't suck**. It's made for small to medium-sized Discord servers/guilds (think about a group the size of you, your friends, and your friend's friends).
-
-![Hero graphic](.github/hero.png)
 
 ## Features
 
