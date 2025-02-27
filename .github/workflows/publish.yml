@@ -79,15 +79,15 @@ jobs:
         with:
           docker_image: jocmp/muse
 
-      - name: Combine tags
-        run: docker buildx imagetools create $(echo '${{ steps.get-tags.outputs.tag }}' | tr "," "\0" | xargs -0 printf -- '-t %s ') 'jocmp/muse:${{ github.sha }}-arm64' 'jocmp/muse:${{ github.sha }}-amd64'
+      # - name: Combine tags
+      #   run: docker buildx imagetools create $(echo '${{ steps.get-tags.outputs.tag }}' | tr "," "\0" | xargs -0 printf -- '-t %s ') 'jocmp/muse:${{ github.sha }}-arm64' 'jocmp/muse:${{ github.sha }}-amd64'
 
-      - name: Update Docker Hub description
-        uses: peter-evans/dockerhub-description@v2.4.3
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-          DOCKERHUB_REPOSITORY: jocmp/muse
+      # - name: Update Docker Hub description
+      #   uses: peter-evans/dockerhub-description@v2.4.3
+      #   env:
+      #     DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      #     DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+      #     DOCKERHUB_REPOSITORY: jocmp/muse
 
   release:
     name: Create GitHub release
