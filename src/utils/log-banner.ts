@@ -8,7 +8,7 @@ const logBanner = () => {
     version: readPackageSync().version,
     paypalUser: 'codetheweb',
     githubSponsor: 'codetheweb',
-    madeByPrefix: 'Made with 🎶 by ',
+    madeByPrefix: 'Made with <3 by ',
     buildDate: process.env.BUILD_DATE ? new Date(process.env.BUILD_DATE) : undefined,
     commit: process.env.COMMIT_HASH ?? 'unknown',
   }).join('\n'));
